@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SEAGRAIN</title>
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="fonts/fonts.css" rel="stylesheet" type="text/css">	
+	<link href="css/styles.css" rel="stylesheet" type="text/css">	
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
+	<script>					
+		$(window).on("load resize",function(e){
+			if ($('body').outerWidth(true) <= 1024) {
+				$(".contact").insertAfter(".main");
+			} else {
+				$(".contact").insertBefore(".main");
+			}				
+		});
+	</script>
+</head>
+<body>
+	<div class="center-block">
+		<div class="float-row">
+			<div class="logo">
+				<img src="img/logo.jpg" alt="SEAGRAIN logo"/>
+			</div>
+			<div class="intro">
+				Seagrain LLP operating as trading company specializing in international grain trading including all kind of cereals and oilseeds
+			</div>
+		</div>
+		<div class="float-row">
+			<div class="contact">
+				<div class="float-row">
+					<strong>SEAGRAIN LLP</strong><br>
+					43 DUKE STREET, EDINBURGH,<br>
+					EH6 8HH, UNITED KINGDOM
+				</div>
+				<div class="float-row">
+					PARTNERSHIP NUMBER: <strong>SO304258</strong><br>
+					PHONE/FAX: <a href="tel:+441315164092"><strong>+44 (131) 516 40 92</strong></a><br>
+					E-MAIL: <a href="mailto:thehardkissmedia@gmail.com"><strong>INFO@SEAGRAIN.CO.UK</strong></a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="main">
+				<p>The company has business relations with partners from more than 6 countries grain exporters and more than 20 countries grain importers. Long-term trade relations with industrial customers, suppliers, sellers and buyers of grain goods, full logistic routes and trade finance by first-class banks allows us to compete and deliver agricultural commodities  to international markets.</p>
+				<p>We sell more than 10 raw agricultural commodities focusing on grains and oilseeds delivered from the countries of the Azov and Black Sea area that are used by our customers for food and feed purposes.</p>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>
